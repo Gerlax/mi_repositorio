@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Pontano Sans", sans-serif;
+}
+h2 {
+  font-family: "Pontano Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../mis-amigurumis-proyecto/background.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+.subBanner {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../mis-amigurumis-proyecto/background.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+.navbar {
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.logo {
+  width: 145px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cart {
+  width: 40px;
+  cursor: pointer;
+}
+nav {
+  padding-left: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+  font-family: "Pontano Sans", sans-serif;
+}
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffb6c1;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li ul li {
+  display: block;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+nav ul li:hover ul {
+  display: block;
+  position: absolute;
+}
+nav ul li a:hover {
+  color: #87adfe;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.socialLinks {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -80px;
+  bottom: 180px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: #6a7199;
+  padding-right: 20px;
+  font-size: 14px;
+  font-family: "serif";
+}
+
+.socialLinks a:hover {
+  color: #87adfe;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #232d60;
+}
+.content p {
+  font-size: 20px;
+
+  color: #6a7199;
+}
+.content {
+  margin-left: 10%;
+  margin-top: 10%;
+  width: fit-content;
+  display: inline-block;
+}
+.content .btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.arrowIcons {
+  margin-top: 40px;
+  margin-left: 180px;
+  display: flex;
+}
+.arrowIcons img {
+  width: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.featureImage {
+  height: 824px;
+  position: absolute;
+}
+#image {
+  display: inline-block;
+  height: 824px;
+  width: 824px;
+  position: relative;
+  bottom: 630px;
+  left: 900px;
+}
+
+/* Seccion Amigurumis */
+
+#amigurumis {
+  width: 100%;
+  padding: 70px 0px;
+}
+.tituloSeccion {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.tituloSeccion p {
+  margin: auto;
+  font-size: 20px;
+  color: #87adfe;
+  font-weight: bold;
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+}
+.tituloSeccion p::after {
+  content: "";
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(#87adfe, #fff);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.tituloSeccion h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+.amigurumis {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: justify;
+  background-image: url(../mis-amigurumis-proyecto/logo.png);
+  background-size: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+.descripcionAmigurumis {
+  flex-basis: 50%;
+}
+.descripcionAmigurumis p {
+  width: 70%;
+  margin-left: 120px;
+}
+.imagenAmigurumi {
+  flex-basis: 50%;
+  margin: auto;
+  position: relative;
+}
+.imagenAmigurumi img {
+  width: 60%;
+  margin-left: 120px;
+  border-radius: 10px;
+}
+.overlay {
+  width: 60%;
+  height: 100%;
+  margin-left: 120px;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  background: #b1add8dc;
+  position: relative;
+  top: 5px;
+}
+.footer p {
+  margin: 0;
+}
+
+/*------------------ Pagina de Conoceme-------------------- */
+
+.subContent h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #232d60;
+}
+.subContent {
+  text-align: center;
+  margin-top: 3%;
+  width: 100%;
+  display: inline-block;
+}
+.subLogo {
+  width: 145px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  right: 30px;
+}
+.subDescripcionAmigurumis {
+  flex-basis: 38%;
+}
+.subDescripcionAmigurumis p {
+  width: 70%;
+  margin-left: 250px;
+}
+
+/* ------------Pagina de Mis Amigurumis------------- */
+
+#amigurumis {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.misAmigurumis {
+  flex-basis: 32%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 457px;
+  height: 613px;
+  margin: 0px 50px;
+  display: inline-flex;
+  cursor: pointer;
+}
+.misAmigurumis img {
+  width: 100%;
+  border-radius: 10px;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-style: italic;
+}
+.layer:hover {
+  background: rgba(135, 173, 254, 0.7);
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+/* ------------Pagina de Contacto------------- */
+.contacto {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+.contactoColumna {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contactoColumna div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contactoColumna div .fa {
+  font-size: 28px;
+  color: #87adfe;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contactoColumna div p {
+  padding: 0;
+  color: #555;
+}
+.contactoColumna div h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.fila {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactoColumna input,
+.contactoColumna textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+.contactoColumna input:focus,
+.contactoColumna textarea:focus {
+  border: 1px solid #2f71ff;
+  border-width: 2px;
+  background: rgba(135, 173, 254, 0.7);
+}
+
+.select {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #87adfe;
+  background: rgba(135, 173, 254, 0.7);
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns= "http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+.select:focus,
+.select:hover {
+  outline: none;
+  border: 1px solid #2f71ff;
+  border-width: 2px;
+}
+.select option {
+  background: #fff;
+}
+form .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border: 1px solid #87adfe;
+  background: rgba(135, 173, 254, 0.7);
+}
+form .btn:hover {
+  border: 1px solid #2f71ff;
+  border-width: 2px;
+}
+
+/* -------------Disney-------------- */
+#foto1 {
+  width: 457px;
+  height: 613px;
+}
+#foto2 {
+  width: 457px;
+  height: 613px;
+}
+#foto3 {
+  width: 457px;
+  height: 613px;
+}
+#foto4 {
+  width: 457px;
+  height: 613px;
+}
+#foto5 {
+  width: 457px;
+  height: 613px;
+}
+#foto6 {
+  width: 457px;
+  height: 613px;
+}
+
+#foto1 a img {
+  border-radius: 5px;
+}
+#foto2 a img {
+  border-radius: 5px;
+}
+#foto3 a img {
+  border-radius: 5px;
+}
+#foto4 a img {
+  border-radius: 5px;
+}
+#foto5 a img {
+  border-radius: 5px;
+}
+#foto6 a img {
+  border-radius: 5px;
+}
+#foto7 a img {
+  border-radius: 5px;
+}
+/* --------------------Media Querys----------------- */
+
+@media (max-width: 700px) {
+  .subContent h1 {
+    font-size: 30px;
+  }
+  .tituloSeccion h2 {
+    font-size: 30px;
+  }
+  .subLogo {
+    width: 80px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .socialLinks {
+    transform: rotate(0deg);
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    left: 13%;
+  }
+}
